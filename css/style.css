@@ -1,0 +1,32 @@
+body {
+    background: url('../img/back.png') no-repeat center center fixed;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    cursor: url('../cursor/cursss.png') 16 16, auto; 
+}
+
+.container {
+    width: 700px;
+    margin: 0px auto;
+}
+
+.test-buttons {
+    display: flex;
+}
+a[href="\#"], a[href=""] {
+    cursor: default;
+}
+.test-buttons button {
+    margin: 20px;
+    cursor: default;
+}
+
+.info-menu {
+    background: black;
+    border: 2px solid silver;
+    color: #fff;
+    padding: 10px;
+    height: 600px;
+}
