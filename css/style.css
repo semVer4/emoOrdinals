@@ -12,16 +12,40 @@ body {
     margin: 0px auto;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 710px;
+}
+
 .info-menu {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: column;
     background: black;
     border: 2px solid silver;
     border-radius: 5px;
     color: #fff;
     padding: 20px;
-    height: 600px;
+    font-size: 24px;
+    height: 80vh;
+}
+.menu-down {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    margin-top: 17%;
+    margin-right: 15%;
+    color: #F13AF1;
+}
+
+.menu-up {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    color: #fff;
 }
 
 .tabs {
@@ -42,11 +66,11 @@ body {
     cursor: inherit;
 }
 
-.info-menu p {
+.menu-up p {
     line-height: 1.3;
     font-size: 24px;
 }
 
-.info-menu p span {
+.menu-up p span {
     color: #F13AF1;
 }
