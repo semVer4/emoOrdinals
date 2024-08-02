@@ -9,23 +9,64 @@
 <body>
     <div class="site-container">
         <main class="main">
-            <section class="info">
-                <div class="container">
-                    <img src="">
-
-                    <div class="test-buttons">
-                        <button>chlen</button>
-                        <button>chlen</button>
-                        <button>chlen</button>
-                        <button>chlen</button>
-                    </div>
-
-                    <div class="info-menu">
-                        <h1>emo-text</h1>
-                    </div>
+            <div class="tabs">
+                <div class="buttons-tabs">
+                    <button class="tab-button" onclick="showTab('tab1')">info</button>
+                    <button class="tab-button" onclick="showTab('tab2')">penis</button>
+                    <button class="tab-button" onclick="showTab('tab3')">collabs</button>
+                    <button class="tab-button" onclick="showTab('tab4')">penis</button>
                 </div>
-            </section>
+            </div>
+
+            <div class="tab-content">
+                <section class="info">
+                    <div class="container">
+                        <div class="content active" id="tab1">
+                            <div class="info-menu">
+                                <img src="./img/emma.png" width="292" height="322" />
+                                <div class="right-text">
+                                    <p>hey I`m Emma <span>(not nemo lol kek)</span><br>and as you noticed I`m emo lol.<br><span>(not nemo again ah..)</span></p>
+                                    <br>
+                                    <p>my life is pretty complicated shit<br>but I'm trying</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class="collabs">
+                    <div class="container">
+                       <div class="content" id="tab3">
+                            <div class="info-menu">
+                                <h1>collabs</h1>
+                            </div>
+                       </div>
+                    </div>
+                </section>
+
+                <section class="collabs">
+                    <div class="container">
+                       <div class="content" id="tab2">
+                            <div class="info-menu">
+                                <h1>chlen</h1>
+                            </div>
+                       </div>
+                    </div>
+                </section>
+
+                <section class="collabs">
+                    <div class="container">
+                       <div class="content" id="tab4">
+                            <div class="info-menu">
+                                <h1>chlen</h1>
+                            </div>
+                       </div>
+                    </div>
+                </section>
+            </div>
         </main>
     </div>
+
+    <script src="./js/script.js" type="text/javascript"></script>
 </body>
 </html>
