@@ -1,11 +1,11 @@
-/* body {
+body {
     background: url('../img/back.png') no-repeat center center fixed;
     background-size: 100% auto;
     -webkit-background-size: 100% auto;
     -moz-background-size: 100% auto;
     -o-background-size: 100% auto;
     cursor: url('../cursor/cursss.png') 16 16, auto; 
-} */
+}
 
 .container {
     width: 710px;
@@ -68,6 +68,7 @@
 .buttons-tabs button {
     margin: 10px;
     cursor: inherit;
+    font-size: 15px;
 }
 
 .menu-up p {
