@@ -1,9 +1,9 @@
 body {
-    background: url('../img/back.png') no-repeat center center fixed;
-    background-size: 100% auto;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
+    background: url('../img/back.png')  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     cursor: url('../cursor/cursss.png') 16 16, auto; 
 }
 
@@ -68,7 +68,7 @@ body {
 .buttons-tabs button {
     margin: 10px;
     cursor: inherit;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .menu-up p {
@@ -80,6 +80,42 @@ body {
     color: #F13AF1;
 }
 
+/*COLLABS*/
+.collabs-menu {
+    padding: 35px 58px 35px 58px;
+}
+
+.collabs-text p {
+    display: flex;
+    font-size: 36px;
+    margin: -10px auto;
+}
+
+.collabs-text span {
+    display: flex;
+    flex-direction: column;
+    color: #F13AF1;
+}
+
+#pt {
+    font-size: 35px;
+    margin-left: 20px;
+    line-height: 1;
+}
+
+#du {
+    float: left;
+}
+
+#dn {
+    float: right;
+}
+
+.cbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
 
 /*PENIS*/
 #openBtn {
