@@ -36,6 +36,10 @@
 
 @media screen and (width < 534px) {
     /*INFO*/
+    .site-container {
+        margin-top: 40%;
+    }
+
     .container {
         width: 300px;
     }
