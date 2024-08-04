@@ -1,0 +1,81 @@
+@media screen and (width < 740px) {
+    /*INFO*/
+    .container {
+        width: 500px;
+    }
+
+    .header {
+        width: 500px;
+    }
+
+    .tabs {
+        width: 500px;
+    }
+
+    .logo img {
+        width: 500px;
+    }
+
+    .menu-up img {
+        width: 192px;
+        height: 222px;
+    }
+
+    .menu-up p {
+        font-size: 15px;
+    }
+
+    .menu-down p {
+        font-size: 15px;
+    }
+
+    .info-menu {
+        height: 400px;
+    }
+}
+
+@media screen and (width < 534px) {
+    /*INFO*/
+    .container {
+        width: 300px;
+    }
+
+    .header {
+        width: 300px;
+    }
+
+    .tabs {
+        width: 300px;
+    }
+
+    .logo img {
+        width: 300px;
+        height: 50px;
+    }
+
+    .menu-up img {
+        width: 92px;
+        height: 122px;
+    }
+
+    .menu-up p {
+        font-size: 10.5px;
+        margin: 0 auto;
+    }
+
+    .menu-down p {
+        font-size: 10.5px;
+    }
+
+    .info-menu {
+        height: 220px;
+    }
+
+    .buttons-tabs {
+        text-align: center;
+    }
+
+    .buttons-tabs button {
+        font-size: 10.5px;
+    }
+}

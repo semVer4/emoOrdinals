@@ -19,6 +19,11 @@ body {
     margin: 0 auto;
 }
 
+.logo img {
+    width: 710px;
+    height: 80px;
+}
+
 .info-menu {
     height: 600px;
 }
