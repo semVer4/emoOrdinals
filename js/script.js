@@ -1,3 +1,4 @@
+//tab
 function showTab(tabId) {
     const contents = document.querySelectorAll('.tab-content .content');
     contents.forEach(content => {
@@ -8,16 +9,22 @@ function showTab(tabId) {
     activeTab.style.display = 'block';
 }
 
-document.getElementById('openBtn').addEventListener('click', function() {
-    document.getElementById('fullscreenOverlay').style.display = 'flex';
+//fullscreen
+document.getElementById('openImageBtn').addEventListener('click', function() {
+    document.getElementById('fullscreenImage').classList.remove('hidden');
+    document.getElementById('fullscreenImage').classList.add('visible');
 });
 
 document.getElementById('closeBtn').addEventListener('click', function() {
-    document.getElementById('fullscreenOverlay').style.display = 'none';
+    document.getElementById('fullscreenImage').classList.remove('visible');
+    document.getElementById('fullscreenImage').classList.add('hidden');
 });
 
-document.getElementById('fullscreenOverlay').addEventListener('click', function(event) {
-    if (event.target === this) {
-        this.style.display = 'none';
-    }
+//preloader
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    const content = document.querySelector('.site-container');
+    
+    preloader.style.display = 'none';
+    content.style.display = 'block';
 });

@@ -8,7 +8,13 @@
     <title>EMO-LIFE</title>
 </head>
 <body>
-    <div class="site-container">
+    <div id="preloader">
+        <div class="loader">
+            <img src="./cursor/cursss.png" />
+        </div>
+    </div>
+
+    <div class="site-container" style="display: none;">
         <header class="header">
             <div class="logo">
                 <img src="./img/logo.png" />
@@ -74,10 +80,10 @@
                     <div class="container">
                        <div class="content" id="tab2">
                             <div class="info-menu menu">
-                                <button id="openBtn">CLICK</button>
-                                <div id="fullscreenOverlay" class="overlay">
-                                    <span id="closeBtn" class="close-btn">&times;</span>
-                                    <img id="fullscreenImg" src="./img/mem.png" alt="Fullscreen Image">
+                                <button id="openImageBtn">CLICK</button>
+                                <div id="fullscreenImage" class="hidden">
+                                    <img src="./img/mem.png" alt="Fullscreen Image">
+                                    <span id="closeBtn">&times;</span>
                                 </div>
                             </div>
                        </div>

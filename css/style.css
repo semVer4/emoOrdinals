@@ -1,3 +1,30 @@
+/*PRELOADER*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader img {
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/**/
+
 body {
     background: url('../img/back.png')  no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -32,7 +59,7 @@ body {
     display: flex;
     flex-direction: column;
     background: black;
-    border: 2px solid silver;
+    border: 3px solid silver;
     border-radius: 5px;
     color: #fff;
     padding: 20px;
@@ -121,34 +148,43 @@ body {
 }
 
 /*PENIS*/
-#openBtn {
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.overlay {
-    display: none;
+#fullscreenImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
 }
 
-.overlay img {
-    max-width: 90%;
-    max-height: 90%;
+#fullscreenImage img {
+    width: 100%;
+    height: 100%;
+     /* Ensures the image covers the container */
 }
 
-.close-btn {
+#closeBtn {
     position: absolute;
     top: 20px;
     right: 30px;
-    color: #F13AF1;
     font-size: 40px;
-    font-weight: bold;
+    color: white;
     cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
 }
