@@ -29,9 +29,9 @@
             <div class="tabs">
                 <div class="buttons-tabs">
                     <button class="tab-button" onclick="showTab('info')">info</button>
-                    <button class="tab-button" onclick="showTab('tab2')">fullscreen</button>
+                    <button class="tab-button">fullscreen</button>
                     <button class="tab-button" onclick="showTab('collabs')">collabs</button>
-                    <button class="tab-button" onclick="showTab('tab4')">penis</button>
+                    <button class="tab-button" onclick="showTab('tab4')">game</button>
                 </div>
             </div>
 
@@ -76,25 +76,38 @@
                     </div>
                 </section>
 
-                <section class="penis">
-                    <div class="container">
-                       <div class="content" id="tab2">
-                            <div class="info-menu menu">
-                                <button id="openImageBtn">CLICK</button>
-                                <div id="fullscreenImage" class="hidden">
-                                    <img src="./img/mem.png" alt="Fullscreen Image">
-                                    <span id="closeBtn">&times;</span>
-                                </div>
-                            </div>
-                       </div>
-                    </div>
-                </section>
-
-                <section class="collabs">
+                <section class="game">
                     <div class="container">
                        <div class="content" id="tab4">
-                            <div class="info-menu menu">
-                                <h1>chlen</h1>
+                            <div class="game menu">
+                                <button id="startBtn">Start Game</button>
+                                <!-- <button id="leaderBtn">Leaderboard</button> -->
+                                <div id="game" class="hidden">
+                                    <div id="dino"></div>
+                                    <div id="cactus"></div>
+                                    <div id="score">Score: 0</div>
+                                    <div id="highScore">Record: 0</div>
+                                </div>
+                                <div id="leaderboard" class="hidden">
+                                    <span>Leaderboard</span>
+                                    <ol class="interface">
+                                        <div class="left">
+                                            <li>test</li>
+                                            <li>test</li>
+                                            <li>test</li>
+                                            <li>test</li>
+                                            <li>test</li>
+                                        </div>
+                                        
+                                        <div class="right">
+                                            <li>test</li>
+                                            <li>test</li>
+                                            <li>test</li>
+                                            <li>test</li>
+                                            <li>test</li>
+                                        </div>
+                                    </ol>
+                                </div>
                             </div>
                        </div>
                     </div>
