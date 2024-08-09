@@ -30,6 +30,59 @@ window.addEventListener('load', function() {
 });
 
 //game
+const modal = document.getElementById("modal");
+const walletConnectBtn = document.getElementById("walletConnectBtn");
+const closeModal = document.getElementsByClassName("close")[0];
+
+walletConnectBtn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Закрытие модального окна при нажатии на "X"
+closeModal.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Закрытие модального окна при клике вне его
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Подключение к Unisat
+document.getElementById("unisatBtn").onclick = function() {
+    connectWallet();
+}
+
+// // Подключение к Xverse
+// document.getElementById("xverseBtn").onclick = function() {
+//     connectWallet('Xverse');
+// }
+
+async function connectWallet() {
+    if (typeof window.unisat !== "undefined") {
+        try {
+            let accounts = await window.unisat.requestAccounts();
+            console.log('connect success', accounts);
+            alert('Connected: ' + accounts[0]);
+        } catch (e) {
+            console.log('connect failed', e);
+            alert('Failed to connect to Unisat wallet. Please try again.');
+        }
+    } else {
+        alert('Please install Unisat Wallet extension.');
+    }
+    // Здесь должен быть вызов функции подключения к соответствующему кошельку
+    // Например, вызов API или SDK для подключения к Unisat или Xverse
+    
+    // // После успешного подключения вызываем alert
+    // alert(walletName + ' Wallet connected successfully!');
+    
+    // // Закрываем модальное окно
+    // modal.style.display = "none";
+}
+//----
 const dino = document.getElementById('dino');
 const cactus = document.getElementById('cactus');
 const scoreElement = document.getElementById('score');
