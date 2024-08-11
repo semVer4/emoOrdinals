@@ -329,6 +329,7 @@ button {
 #leaderboardS {
     margin-top: 60px;
     text-align: center;
+    padding: 20px;
 }
 
 #leaderboardS span { color: #D1156D; font-weight: bold; } 
