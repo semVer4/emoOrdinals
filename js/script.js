@@ -2,8 +2,11 @@ import { doc, setDoc, getDoc, collection, query, orderBy, limit, getDocs } from 
 const db = window.firestoreDB;
 
 let music = new Audio('./audio/music.mp3');
-music.play();
-music.loop = true;
+
+document.addEventListener('click', () => {
+    music.play();
+    music.loop = true;
+}, { once: true }); 
 
 //hoverImg
 window.onload = function() {
