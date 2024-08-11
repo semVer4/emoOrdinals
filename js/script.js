@@ -1,7 +1,7 @@
 import { doc, setDoc, getDoc, collection, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 const db = window.firestoreDB;
 
-let music = new Audio('../audio/1.mp3');
+let music = new Audio('./audio/1.mp3');
 music.play();
 music.loop = true;
 
@@ -167,8 +167,8 @@ startBtn.addEventListener('click', function() {
 let gameInterval;
 let scoreInterval;
 
-let gamePlay = new Audio('../audio/game.mp3');
-let gameOver = new Audio('../audio/gameOver.mp3');
+let gamePlay = new Audio('./audio/game.mp3');
+let gameOver = new Audio('./audio/gameOver.mp3');
 
 function startGame() {
     music.pause();
