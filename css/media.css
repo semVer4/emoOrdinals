@@ -1,4 +1,13 @@
 @media screen and (width < 740px) {
+    /*COLLABS*/
+    .collabs-text p {
+        font-size: 25px;
+    }
+
+    .collabs-text span {
+        font-size: 25px;
+    }
+
     /*INFO*/
     .container {
         width: 500px;
@@ -35,6 +44,23 @@
 }
 
 @media screen and (width < 534px) {
+ /*COLLABS*/
+    .collabs-text p {
+        font-size: 18px;
+    }
+
+    .collabs-text span {
+        font-size: 18px;
+    }
+
+    .collabs-menu {
+        padding: 35px 30px 35px 30px;
+    }
+
+    .cbtn img {
+        width: 200px;
+    }
+
     /*INFO*/
     .site-container {
         margin-top: 35%;
