@@ -1,7 +1,7 @@
 import { doc, setDoc, getDoc, collection, query, orderBy, limit, getDocs } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 const db = window.firestoreDB;
 
-let music = new Audio('./audio/1.mp3');
+let music = new Audio('./audio/music.mp3');
 music.play();
 music.loop = true;
 
